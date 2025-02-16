@@ -221,6 +221,24 @@ function createChart(labels, prices) {
 }
 
 /**
+ * Obtiene los insights del token desde dexpaprika
+ */
+function fetchTokenInsights(tokenAddress) {
+    const url = `https://api-beta.dexpaprika.com/networks/solana/tokens/${tokenAddress}`;
+    chrome.runtime.sendMessage({ action: "fetchTokenInsights", url }, response => {
+      if (chrome.runtime.lastError) {
+        console.error("Error:", chrome.runtime.lastError.message);
+      } else if (response.success) {
+        console.log("Token Insights:", response.data);
+      } else {
+        console.error("Error fetching token insights:", response.error);
+      }
+    });
+  }
+  
+  
+
+/**
  * Resalta la palabra de 44 caracteres y la hace clicable.
  */
 function highlightWord(element, word) {
@@ -239,7 +257,10 @@ function highlightWord(element, word) {
             e.preventDefault();
             e.stopPropagation();
             e.stopImmediatePropagation();
+            
+            console.log("🖱️ Token clicked:", word);
             showChartContainer(word, highlightedElement);
+            fetchTokenInsights(word);
         }, true);
         
     }
