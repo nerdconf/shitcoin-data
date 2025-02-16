@@ -1,0 +1,37 @@
+/* Texto resaltado (contrato) */
+.highlight-44 {
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, rgba(62, 209, 196, 0.3), rgba(62, 209, 196, 0.6));
+    transition: background 0.3s ease;
+}
+.highlight-44:hover {
+    background: linear-gradient(90deg, rgba(62, 209, 196, 0.6), rgba(62, 209, 196, 0.9));
+}
+
+/* Contenedor flotante para la gráfica */
+.chart-container-floating {
+    position: absolute;
+    width: 320px;
+    height: 220px;
+    padding: 12px;
+    background: rgba(25, 25, 25, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+/* Ajustar canvas al contenedor */
+#priceChart {
+    width: 100%;
+    height: 100%;
+}
