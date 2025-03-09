@@ -4,7 +4,7 @@ Last updated: 2024
 
 ## 1. General Information
 
-CryptoTracker Extension is a browser extension that allows users to view information about tokens on the Solana network. We are committed to protecting our users' privacy and being transparent about data collection and usage.
+Shitcoin Finder extension is a browser extension that allows users to view information about tokens on the Solana network directly from X desktop. We are committed to protecting our users' privacy and being transparent about data collection and usage.
 
 ## 2. Data Collection
 
@@ -44,8 +44,8 @@ We reserve the right to update this privacy policy at any time. Changes will be 
 ## 7. Contact
 
 If you have questions about this privacy policy, you can contact us through:
-- GitHub: [Your GitHub Profile]
-- Email: [Your Contact Email]
+- GitHub: nerdconf
+- Email: hey@nerdconf.com
 
 ## 8. Consent
 
